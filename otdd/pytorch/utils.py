@@ -104,7 +104,7 @@ def extract_dataset_targets(d):
         Indices can differ from range(len(d)) if, for example, this is a Subset dataset.
 
     """
-    assert isinstance(d, torch.utils.data.dataset.Dataset)
+   # assert isinstance(d, torch.utils.data.dataset.Dataset)
     if isinstance(d, torch.utils.data.dataset.Subset):
         dataset = d.dataset
         indices = d.indices
